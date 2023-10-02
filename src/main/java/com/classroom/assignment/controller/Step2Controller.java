@@ -19,7 +19,7 @@ public class Step2Controller {
   @GetMapping("/evening")
   // nameというパラメータ名で値を指定し、Getパラメータを必須にしない為に「name = "name", required = false」と指定する。
   public String morning(@RequestParam(name = "name", required = false) String name, Model model) {
-    model.addAttribute("greeting", name + "さん、こんばんは！");
+    model.addAttribute("greeting", name + "さん、こんばんは!");
     return "step2/greeting";
   }
 
